@@ -1,0 +1,21 @@
+{
+  "name": "example",
+  "version": "1.0.0",
+  "repository": "git+https://github.com/nazarov-mi/shri-homework-11.git",
+  "homepage": "https://github.com/nazarov-mi/shri-homework-11/example",
+  "author": "Nazarov MI",
+  "main": "index.html",
+  "scripts": {
+    "build": "webpack",
+    "serve": "webpack --watch"
+  },
+  "dependencies": {
+    "request": "file:.."
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.4",
+    "babel-preset-stage-0": "^6.24.1",
+    "webpack": "^3.8.1"
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "name": "request",
+  "version": "1.0.0",
+  "homepage": "https://github.com/nazarov-mi/shri-homework-11#readme",
+  "bugs": {
+    "url": "https://github.com/nazarov-mi/shri-homework-11/issues"
+  },
+  "main": "index.js",
+  "scripts": {
+    "docs:build": "rimraf ./docs && jsdoc --configure .jsdoc.json --verbose",
+    "lint": "eslint \"**/*.js\""
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run lint",
+      "pre-push": "npm run lint"
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nazarov-mi/shri-homework-11.git"
+  },
+  "author": "Nazarov MI (m@nazarov-mi.ru)",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-preset-stage-0": "^6.24.1",
+    "eslint": "^4.19.1",
+    "eslint-config-airbnb-base": "^12.1.0",
+    "eslint-plugin-import": "^2.10.0",
+    "husky": "^0.14.3",
+    "jsdoc": "^3.5.5",
+    "minami": "^1.2.3",
+    "rimraf": "^2.6.2"
+  }
+}
